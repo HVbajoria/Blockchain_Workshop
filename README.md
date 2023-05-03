@@ -1,6 +1,4 @@
-# Level 7 - Create An Ethereum Dapp with Ethers.js
-
-### (Forked from [BlockDevsUnited/BasicFrontEndTutorial](https://github.com/BlockDevsUnited/BasicFrontEndTutorial))
+Create An Ethereum Dapp with Ethers.js
 
 This is a step-by-step tutorial on how to create a front end, deploy a Solidity smart contract, and connect them together.
 We will use [Metamask](https://metamask.io), [Remix IDE](https://remix.ethereum.org) and [Ethers.js](https://github.com/ethers-io/ethers.js/).
@@ -13,12 +11,6 @@ By the end of this tutorial you will be able to create a simple HTML front end w
 
 ---
 
-## Prefer a Video?
-
-If you would rather learn from a video, we have a recording available of this tutorial on our YouTube. Watch the video by clicking on the screenshot below, or go ahead and read the tutorial!
-
-[![Cryptocurrency Tutorial](https://i.imgur.com/pDcYqIg.png)](https://www.youtube.com/watch?v=aqxAWLi6UMA "dApp Tutorial")
-
 ### Preparation
 
 1. **Download and Install [MetaMask](https://metamask.io)**
@@ -27,12 +19,11 @@ If you would rather learn from a video, we have a recording available of this tu
 
      _The important bits for us are: `1:06 to 4:14`_
 
-   - Click Ethereum Mainnet in the top. Change to the Ropsten Tesnet and get a copy of the account's public address on your Metamask Wallet.
+   - Click Ethereum Mainnet in the top. Change to the Polygon Mumbai Tesnet and get a copy of the account's public address on your Metamask Wallet.
 
-2. **Request some Ropsten Tesnet Ether from a faucet loaded into your Metamask Wallet.**
+2. **Request some Polygon Mumbai Tesnet Ether from a faucet loaded into your Metamask Wallet.**
 
-   - [Faucet link to request funds](https://faucet.egorfine.com/)
-   - [Blog explaining a faucet and how to use one](https://blog.b9lab.com/when-we-first-built-our-faucet-we-deployed-it-on-the-morden-testnet-70bfbf4e317e)
+   - [Faucet link to request funds](https://faucet.polygon.technology)
 
 3. **Install a http server. Use any you like, but we recommend `lite-server` for beginners:**
 
@@ -343,19 +334,9 @@ Celebrate! You just made a webpage that interacted with _a real live Ethereum te
 ### If you had trouble with the tutorial, you can try out the example app provided.
 
 ```bash
-git clone https://github.com/LearnWeb3DAO/BasicFrontEndTutorial.git
-cd BasicFrontEndTutorial
+git clone https://github.com/HVbajoria/Blockchain_Workshop.git
+cd Blockchain_Workshop
 lite-server
 ```
-
-#### Try and use the following information to interact with an existing contract we published on the Roptsen testnet:
-
-- We have a `MoodDiary` contract instance created [at this transaction](https://ropsten.etherscan.io/tx/0x8da093fdc4ae3e1b469dfff97b414a9800c9fdd8c1c897b6b746faf43aa3b7f8)
-
-- Here is the contract ([on etherscan](https://ropsten.etherscan.io/address/0xc5afd2d92750612a9619db2282d9037c58fc22cb))
-
-  - We also verified our source code to [ropsten.etherscan.io](https://ropsten.etherscan.io/address/0xc5afd2d92750612a9619db2282d9037c58fc22cb#code) as an added measure for you to verify what the contract is exactly, and also the ABI is available to _the world_!
-
-- The ABI is also in [this file](https://github.com/LearnWeb3DAO/BasicFrontEndTutorial/blob/master/Mood_ABI.json)
 
 #### This illustrates an important point: you can also build a dApp _without needing to write the Ethereum contract yourself_! If you want to use an existing contract written and already on Ethereum, you can!
